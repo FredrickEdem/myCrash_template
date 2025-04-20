@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+<body>
+    <div class="navbar">
+      <div class="container">
+          <a class="logo" href="#">FEDERICK<span>EDEM</span></a>
+
+          <img id="mobile-cta" class="mobile-menu" src="./images/bars-solid.svg" alt="Open Navigation" width="40px" height="40px">
+
+          <nav>
+            <img id="mobile-exit" class="mobile-menu-exit" src="./images/times-solid.svg" alt="Open Navigation" width="40px" height="40px">
+
+            
+
+              <ul class="primary-nav"> 
+                <div class="search-wrapper">
+                    <img src="./images/search-solid.svg" alt="">
+                    <input type="search">
+                </div>
+
+                  <li class="current"><a href="#">Home</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Pricing</a></li>
+              </ul>
+
+              <ul class="secondary-nav">
+                <li><a href="#">Contact</a></li>
+                <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+            </ul>
+          </nav>
+      </div>
+    </div>
+
+    <section class="hero">
+         <div class="container">
+            <div class="left-col">
+                <p class="subhead">The Nav &amp; Fred</p>
+                <h1>The Task App</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try for free</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="images/video-solid.svg" alt="" width="40px" height="40px">
+                        Watch a video
+                    </a>
+                </div>
+            </div>
+
+            <span class="las la-meh hero-img"></span>
+         </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>First Ammount</li>
+                <li>Second Ammount</li>
+                <li>Third Ammount</li>
+                <li>Fourth Ammount</li>
+                <li>Five Ammount</li>
+                <li>Last Ammount</li>
+            </ul>
+
+            <img src="images/firebase-chat-app.png" alt="" width="300px" height="400px">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/firebase-chat-app.png" alt="" width="300" height="300px">
+
+                    <blockquote>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis corrupti fuga esse dolore voluptatum exercitationem numquam reprehenderit iste magni tenetur nisi, suscipit consequatur eligendi facilis laboriosam officiis rem iure velit!</blockquote>
+                      <cite>Frederick Edem</cite>
+                </li>
+
+                <li>
+                    <img src="images/firebase-chat-app.png" alt="" width="300px" height="300px">
+
+                    <blockquote>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis corrupti fuga esse dolore voluptatum exercitationem numquam reprehenderit iste magni tenetur nisi, suscipit consequatur eligendi facilis laboriosam officiis rem iure velit!</blockquote>
+                      <cite>Frederick Edem</cite>
+                </li>
+
+                <li>
+                    <img src="images/firebase-chat-app.png" alt="" width="300px" height="300px">
+
+                    <blockquote>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis corrupti fuga esse dolore voluptatum exercitationem numquam reprehenderit iste magni tenetur nisi, suscipit consequatur eligendi facilis laboriosam officiis rem iure velit!</blockquote>
+                      <cite>Frederick Edem</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name </label>
+                    <input id="name"type="text" name="name">
+
+                    <label for="message">Message</label>
+                    <textarea type="" id="message" name="message" clos="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send Message">
+                </form>
+            </div>
+
+            <div class="contact-right">
+                <img src="./images/welcome II.jpg" class="page" alt="" width="100%" height="300px">
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h2>More About Us</h2>
+        <div class="icons">
+          <span class="lab la-google-plus"></span>
+          <span class="lab la-facebook-f"></span>
+          <span class="lab la-twitter"></span>
+          <span class="lab la-skype"></span>
+          <span class="lab la-instagram"></span>
+      </div>
+        <a href="https://icons8.com/line-awesome" class="line">line-awesome</a>
+    </section>
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+          nav = document.querySelector('nav');
+          mobileBtnExit = document.getElementById('mobile-exit');
+
+          mobileBtn.addEventListener('click', () => {
+              nav.classList.add('menu-btn');
+          })
+
+          mobileBtnExit.addEventListener('click', () => {
+              nav.classList.remove('menu-btn');
+          })
+    </script>
+</body>
+</html>
